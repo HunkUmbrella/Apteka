@@ -44,5 +44,13 @@ namespace Apteka
         {         
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form fAuthorization = new Zaprosi();
+            fAuthorization.Show();
+            fAuthorization.FormClosed += new FormClosedEventHandler(form_FormClosed);
+            this.Hide();
+        }
     }
 }
